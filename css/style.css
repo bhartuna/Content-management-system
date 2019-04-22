@@ -16,10 +16,33 @@ p{
 }
 .container{
 	background: rgb(255, 255, 255);
-	border-radius: 6px;
+	border-radius: 4px;
 	box-shadow: 0px 0px 4px rgb(220, 220, 220);
 	margin: auto;
+    margin-top: 30px;
 	width: 1680px;
+}
+header{
+    background: rgb(50, 58, 79);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 0px 4px rgb(220, 220, 220);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin: auto;
+    width: 1680px;
+}
+.header__element{
+    display: flex;
+}
+header p{
+     align-self: center;
+}
+header span{
+    color: rgb(32, 201, 151);
+    font-size: 12px;
+}
+.logout{
+    margin: 0px 0px 0px auto !important;
 }
 .row{
     padding: 10px;
@@ -64,29 +87,27 @@ p{
     width: 8%;
 }
 .column__element:nth-of-type(5), .article__element:nth-of-type(5){
-    width: 22%;
+    width: 20%;
 }
-.column__element:nth-of-type(6), .article__element:nth-of-type(6){
-    width: 6%;
+.article__element:nth-of-type(6), .article__element:nth-of-type(7){
+    width: 4%;
 }
-.article__element:nth-of-type(6) a{
+.article__element a{
     color: rgb(150, 158, 179);
 }
-.article__element:nth-of-type(6) a:hover{
+.article__element a:hover{
 	color: rgb(50, 58, 79);
     cursor: pointer;
 }
 .button{
-	background: rgb(240, 245, 250);
-    border: 1px solid rgb(50, 58, 79);
+	background: rgb(32, 201, 151);
     border-radius: 4px;
-    color: rgb(50, 58, 79);
+    color: rgb(248, 250, 252);
     font-weight: 900; 
-    margin: 12px auto 0px 0px;
-    padding: 10px 16px;
+    margin: 0px auto 12px 0px;
+    padding: 6px 10px;
 }
 .button:hover{
-    background: rgb(50, 58, 79);
-    color: rgb(255, 255, 255);
+    background: rgb(12, 181, 131);
     cursor: pointer;
 }

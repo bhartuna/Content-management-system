@@ -12,17 +12,12 @@ $smarty->config_dir = './configs';
 $smarty->plugins_dir = './plugins';
 
 if(isset($_SESSION['user'])){
-	switch($_GET['page']){
-		case 1:
-			include 'modules/panel-article/_connector.php';
-			break;
-	}	
-	$smarty->assign('login', $_SESSION['user']);
-}
-else{
-	header('Location: /cms/login.php');	
+	header('Location: /cms/?page=1&sub=1');		
 }
 
-$smarty->display('index.tpl');
+$smarty->assign('error', $_SESSION['error']);
+$smarty->display('login.tpl');
+
+unset($_SESSION['error']);
 
 ?>

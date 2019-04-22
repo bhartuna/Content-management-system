@@ -2,13 +2,13 @@
 	<div class="row">
 		<div class="col">
 			<div class="columns">
+				<a class="button" href="">Nowy wpis</a>
                 <div class="column">
                     <div class="column__element">Id</div>
                     <div class="column__element"> Tytuł</div>
                     <div class="column__element">Odnośnik</div>
                     <div class="column__element">Data dodania</div>
                     <div class="column__element">Kategoria</div>
-                    <div class="column__element"></div>
                 </div>
             </div>
             <div class="articles">   
@@ -20,11 +20,13 @@
                     <div class="article__element">{$articles[article].ar_date}</div>
                     <div class="article__element">{$articles[article].ca_name}</div>
                     <div class="article__element">
+                        <a class="editArticle">Edytuj</a>
+                    </div>
+                    <div class="article__element">
                         <a class="deleteArticle">Usuń</a>
                     </div>
                 </div>
 {/section}
-                <a class="button" href="">Nowy wpis</a>
             </div>
 		</div>
 	</div>
