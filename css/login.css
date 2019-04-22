@@ -1,0 +1,66 @@
+*{
+	border: none;
+	box-sizing: border-box;
+	font-family: 'Verdana';
+	font-size: 14px;
+	margin: 0px;
+	outline: none;
+	padding: 0px;
+	text-decoration: none;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+	background: rgb(248, 250, 252);
+}
+p{
+	font-size: 12px;
+}
+.container{
+    bottom: 0px;
+    height: 400px;
+    left: 0px;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    top: 0px;   
+    width: 300px; 
+}
+form{
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgb(220, 220, 220);
+    height: auto;
+    padding: 10px;
+    width: 300px;    
+}
+.error{
+    height: 40px;
+    line-height: 40px;
+}
+.input{
+    background: rgb(248, 250, 252);
+    margin-bottom: 4px;
+    padding: 8px;   
+    width: 100%;
+}
+.button{
+    background: rgb(32, 201, 151);
+    border-radius: 4px;
+    color: rgb(248, 250, 252);
+    font-weight: 900; 
+    margin: 12px auto 0px 0px;
+    padding: 8px 12px;
+}
+.button:hover{
+    background: rgb(12, 181, 131);
+    cursor: pointer;
+}
+
+
+
+
+
+

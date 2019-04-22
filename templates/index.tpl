@@ -8,6 +8,16 @@
     <!--<script src="js/script.js"></script>-->
 </head>
 <body>
+	<header>
+		<div class="row">
+			<div class="col">
+				<div class="header__element">
+					<p>Zalogowany: <span>{$login}</span></p>
+					<a class="button logout" href="/cms/functions.php?logout=true">Wyloguj</a>
+				</div>
+			</div>
+		</div>
+	</header>
 {if $smarty.GET.page eq 1}
 	{include file='../modules/panel-article/templates/_connector.tpl'}
 {/if}
