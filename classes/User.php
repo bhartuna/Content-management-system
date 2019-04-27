@@ -21,7 +21,10 @@ class User{
 
 	public function getUser(){
 		if($this->connect){
-        	$result = $this->connect->getOne("SELECT us_login FROM cms_users WHERE us_login = $this->login AND us_password = MD5($this->password)");
+        	$result = $this->connect->getOne("
+        		SELECT us_login 
+        		FROM cms_users 
+        		WHERE us_login = $this->login AND us_password = MD5($this->password)");
             if($result == -1){
             	return false;
             }
